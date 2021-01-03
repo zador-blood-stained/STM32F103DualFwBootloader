@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "name": "STM32",
+      "includePath": [
+        "Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+        "Drivers/CMSIS/Include",
+        "Drivers/STM32F1xx_HAL_Driver/Inc",
+        "Inc"
+      ],
+      "defines": [
+		    "USE_FULL_LL_DRIVER",
+		    "HSE_VALUE=8000000",
+		    "HSE_STARTUP_TIMEOUT=100",
+		    "LSE_STARTUP_TIMEOUT=5000",
+	    	"LSE_VALUE=32768",
+	    	"HSI_VALUE=8000000",
+	    	"LSI_VALUE=40000",
+	    	"VDD_VALUE=3300",
+	    	"PREFETCH_ENABLE=1",
+	    	"STM32F103xB"
+      ],
+      "compilerPath": "/opt/toolchains/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-gcc",
+      "cStandard": "c11",
+      "cppStandard": "c++11"
+    }
+  ],
+  "version": 4
+}

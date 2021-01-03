@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "showDevDebugOutput": true,
+      "cwd": "${workspaceRoot}",
+      "executable": "./build/${workspaceFolderBasename}.elf",
+      "name": "Debug STM32",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "preLaunchTask": "Build STM",
+      "svdFile": "${workspaceRoot}/STM32F103xx.svd",
+      "configFiles": [
+        "interface/stlink-v2.cfg",
+        "target/stm32f1x.cfg"
+      ]
+    }
+  ]
+}
